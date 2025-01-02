@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+  height: 3em;
+  width: 100%;
+  min-width: 200px;  
+  
+}
+.addButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 1em;
+  min-width: 2em;
+  max-width: 8em;
+  width: 100%;
+  height: 50px;
+  border-radius: .5rem;
+  border: 2px solid white;
+  background-color: white
+}
+
+#themeIcon {
+  background-image: url(../../assets/icon-moon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-position: center;
+}
+.input,.darkInput{
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background-color: hsl(235, 24%, 19%);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  
+}
+.darkInput{
+  background-color: #fff2c0;
+  border: 1px solid ;
+  width: 100%;
+  color: black;
+}
+.input::placeholder{
+  color: white;
+  font-size: 1rem;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+}
+
+.darkThema{
+  background-image: url("../../assets/icon-sun.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  border-radius: 2rem;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 1rem;
+  right:10%;
+}

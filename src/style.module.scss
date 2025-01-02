@@ -1,0 +1,97 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+.lightBackImageSide,.darkBackImageSide {
+  flex: 2;
+  width: 100vw;
+  background-image: url(./assets/bg-desktop-dark.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;    
+
+}
+.darkBackImageSide{
+  background-image:url(./assets/bg-desktop-light.jpg) ;
+}
+
+.bottomColor,.darkBottomColor {
+  flex: 3;
+  background-color: rgb(27, 32, 80);
+  
+  
+}
+.darkBottomColor{
+  background-color: rgb(228, 231, 243);
+
+}
+.content,.content2,.darkContent ,.darkContent2{
+  position: fixed;
+  width: 40%;
+  height: 15%;
+  right: 30%;
+  top: 10%;
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: hsl(235, 24%, 19%);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: start;
+
+}
+.content2,.darkContent2{
+top:30%;
+height: 60%;
+padding: 0;
+}
+.darkContent{
+  background-color: #fff7d7;
+  }
+.darkContent2{
+  background-color: #fff7d7;
+    }
+
+.contentInput{
+  width: 70%;
+  min-width: 100px;
+}
+.contentList{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  
+
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 1rem;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+@media (max-width:820px) {
+  .content2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 5%;
+    right: 0;
+    width: 90%;
+    
+  }
+  .content{
+    width: 90%;
+    left: 5%;
+  }
+
+  
+}
